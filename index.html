@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Colorpicker demo</title>
+		<link rel="stylesheet" href="./lib.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="wrap">
+				<div class="body">
+					<div id="color_picker"></div>
+					<p class="sample">
+						<i class="sample__color"></i>
+						<em class="sample__code"></em>
+					</p>
+				</div>
+				<nav class="controller">
+					<label>
+						<span>Type: </span>
+						<select onchange="onChangeType(this)">
+							<option value="default" selected>default</option>
+							<option value="circle">circle</option>
+							<option value="mini">mini</option>
+							<option value="ring">ring</option>
+							<option value="none">none</option>
+						</select>
+					</label>
+				</nav>
+			</div>
+		</main>
+		<script src="./lib.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
