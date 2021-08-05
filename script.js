@@ -22,6 +22,13 @@ function updateColor(value) {
   $color.style.setProperty('--color', color);
 }
 
+function updatePattle() {
+  defaults.swatchColors.unshift(color);
+  defaults.swatchColors.pop(-1);
+  picker.destroy();
+  picker = new EasyLogicColorPicker(Object.assign(defaults));
+}
+
 function onChangeType(e) {
   picker.setType(e.value);
 }
